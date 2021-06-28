@@ -9,15 +9,36 @@ body {
 
 article {
     display: grid;
-    grid-template-columns: 1fr 0.5in minmax(0, 7.5in) 0.5in 1fr;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
     height: 100vh;
     font-size: 32px;
     padding: 0.5in 0;
 }
 
 article * {
-    grid-column: 3 / 4;
+    grid-column: start / end;
+}
 
-    @media (max-width: 8.5in) {
-      article { grid-template-columns: 1fr 0.5in [start] minmax(0, 7.5in) [end] 0.5in 1fr; }    
+@media (max-width: 8.5in) {
+      article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }    
+}
+
+img {
+    width: 100%;
+}
+
+.size-1 {
+    grid-column: 4/5;
+}
+   
+.size-2 {
+    grid-column: 4/5;
+}
+
+.size-3 {
+    grid-column: 4/5;
+}
+
+.size-4 {
+    grid-column: 4/5;
 }

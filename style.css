@@ -6,3 +6,15 @@ html {
 body {
     font-family: 'Castoro', serif;
 }
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in minmax(0, 7.5in) 0.5in 1fr;
+    height: 100vh;
+    font-size: 32px;
+    padding: 0.5in 0;
+}
+
+article * {
+    grid-column: 3 / 4;
+}

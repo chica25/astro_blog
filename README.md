@@ -1,3 +1,3 @@
-## 100 days of Coding challenge
+### 100 days of Coding challenge
 
-Astronomy app built in HTML and CSS.
+Astronomy blog built in HTML and CSS with the correct semantics for accessibility.
